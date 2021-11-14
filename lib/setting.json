@@ -1,0 +1,13 @@
+{
+  "sAdmin": "6281289096745@c.us",
+  "restartState": true,
+  "restartId": "6281289096745@c.us",
+  "banChats": false,
+  "Rest": true,
+  "limitCount": 20,
+  "memberLimit": 25,  //////kalau member nya kurang dari 25 gak bisa ada command
+  "groupLimit": 1,
+  "prefix": "#",
+  "mtc": false,
+  "whitelist": []
+}
