@@ -63,7 +63,7 @@ const start = async (client = new Client()) => {
         client.onAddedToGroup(((chat) => {
             let totalMem = chat.groupMetadata.participants.length
             if (totalMem < 257) { 
-            	client.sendText(chat.id, `Halo warga ${name} mohon maaf, jika mau menginvite bot, silahkan membeli akses premium bot melalui wa.me//6281289096745`).then(() => client.leaveGroup(chat.id)).then(() => client.deleteChat(chat.id))
+            	client.sendText(chat.id, `Halo warga ${name} mohon maaf, jika mau menginvite bot, silahkan membeli akses premium bot melalui wa.me//6285869074622`).then(() => client.leaveGroup(chat.id)).then(() => client.deleteChat(chat.id))
             } else {
                 client.sendText(chat.groupMetadata.id, `Hello group members *${name}*, thank you for inviting this bot, to see the bot menu send *#menu*`)
             }
@@ -79,7 +79,7 @@ const start = async (client = new Client()) => {
     const groups = await client.getAllGroups()
     // kondisi ketika batas group bot telah tercapai,ubah di file settings/setting.json
     if (groups.length > groupLimit) {
-    await client.sendText(chat.id, `Sorry, bot tidak bisa join di grub untuk menginvite bot silahkan hubungi owner bot https://wa.me/6281289096745 max group: ${groupLimit}`).then(() => {
+    await client.sendText(chat.id, `Sorry, bot tidak bisa join di grub untuk menginvite bot silahkan hubungi owner bot https://wa.me/6285869074622 max group: ${groupLimit}`).then(() => {
           client.leaveGroup(chat.id)
           client.deleteChat(chat.id)
       }) 
@@ -92,7 +92,7 @@ const start = async (client = new Client()) => {
         })
         } else {
         await client.simulateTyping(chat.id, true).then(async () => {
-          await client.sendText(chat.id, `Hai minna~, Im RIDHO BOT. To find out the commands on this bot type #menu`)
+          await client.sendText(chat.id, `Hai minna~, Im BLACK BOT. To find out the commands on this bot type #menu`)
         })
         }
     }
@@ -100,7 +100,7 @@ const start = async (client = new Client()) => {
 
         // listening on Incoming Call
         client.onIncomingCall(( async (call) => {
-            await client.sendText(call.peerJid, 'Maaf, saya tidak bisa menerima panggilan. nelfon = block!.\nbila ingin di unblock kamu harus berdonasi dan hubungi whatsapp owner: wa.me/6281289096745')
+            await client.sendText(call.peerJid, 'Maaf, saya tidak bisa menerima panggilan. nelfon = block!.\nbila ingin di unblock kamu harus berdonasi dan hubungi whatsapp owner: wa.me/6285869074622')
             .then(() => client.contactBlock(call.peerJid))
         }))
     }
