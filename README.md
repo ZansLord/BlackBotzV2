@@ -4,7 +4,7 @@
 
 # **Black Botz**
 
-> ZansBotz is a multipurpose WhatsApp bot using adiwajshing/baileys library!
+> ZansBotz is a multipurpose WhatsApp bot using @open-wa/wa-automate library!
 >
 >
 
